@@ -16,15 +16,12 @@
 
 /*   shared styles   */
 
-:host, :root {
-    --rem: 18;
-}
 
 p{
     color: rgba(255, 255, 255, 0.5);
-    font-size: .9rem;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 1.3rem;
+    line-height: 24px;
     letter-spacing: 0.5px;
 }
 
@@ -64,7 +61,7 @@ nav{
 
 .logo{
     color: rgb(230, 83, 60);
-    font-size: 2rem;
+    font-size: 36px;
     font-weight: 800;
     font-style: italic;
 }
@@ -75,13 +72,17 @@ nav ul{
     column-gap: 50px;
     list-style-type: none;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 2.3rem;
+    border-radius: 40px;
     padding: 4px 20px 4px 4px;
+}
+
+.menu{
+    display: none;
 }
 
 nav a{
     color: rgb(255, 255, 255);
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -111,7 +112,7 @@ nav a{
 }
 
 .bannertext{
-    max-width: 50%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     row-gap: 25px;
@@ -119,25 +120,25 @@ nav a{
 
 .bannertext h1{
     color: rgb(255, 255, 255);
-    font-size: 4.3rem;
+    font-size: 80px;
     font-weight: 900;
     line-height: 120%;
 }
 
 .bannertext span{
     font-family: 'Miama', sans-serif;
-    font-size: 7.5rem;
+    font-size: 150px;
     font-weight: 400;
     line-height: 1px;
 }
 
 .join{
-    padding: .9rem 2.2rem;
-    margin-right: .7rem;
-    border-radius: 2.3rem;
+    padding: 16px 40px;
+    margin-right: 14px;
+    border-radius: 40px;
     background: rgb(230, 83, 60);
     color: rgb(255, 255, 255);
-    font-size: 1rem;
+    font-size: 18px;
     font-weight: 600;
     border: none;
 }
@@ -145,6 +146,7 @@ nav a{
 .download{
     border: 1px solid rgb(255, 255, 255);
     background-color:transparent;
+    margin-right: 0px;
 }
 
 .bannerimg{
@@ -160,44 +162,44 @@ nav a{
     position: absolute;
     bottom: 15%;
     left: -20%;
-    padding: 1rem 1.1rem;
+    padding: 20px 23px;
     display: flex;
     column-gap: .7rem;
     align-items: center;
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
+    border-radius: 12px;
     backdrop-filter: blur(20px);
     background: rgba(48, 48, 48, 0.54);
 }
 
 .redcircle{
-    height: 2.3rem;
-    width: 2.3rem;
+    height: 40px;
+    width: 40px;
     background: rgb(230, 83, 60);
     border-radius: 50%;
 }
 
 .video h3{
     color: rgb(250, 250, 249);
-    font-size: 1.3rem;
+    font-size: 24px;
     font-weight: 900;
-    line-height: 1.3rem;
+    line-height: 24px;
     letter-spacing: 0.3px;
 }
 
 .bannerimg p{
     color: rgba(239, 237, 232, 0.65);
-    font-size: .9rem;
+    font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.5px;
-    margin-top: .5rem;
+    margin-top: 10px;
 }
 
 .tutorial{
     position: absolute;
     top: 25%;
     right: 0%;
-    padding: 1rem 1.1rem;
+    padding: 20px 23px;
     display: flex;
     flex-direction: column;
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -208,7 +210,91 @@ nav a{
 
 .tutorial h1{
     color: rgb(255, 255, 255);
-    font-size: 2rem;
+    font-size: 40px;
     font-weight: 900;
     letter-spacing: 1px;
+    line-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    nav{
+        padding-top: 50px;
+    }
+    nav ul{
+        display: none;
+    }
+    .menu{
+        display: inline-block;
+        cursor: pointer;
+    }
+    nav i{
+        color: white;
+    }
+    .banner{
+        flex-direction: column;
+        row-gap: 50px;
+        margin-top: 50px;
+    }
+    .bannertext,.bannerimg{
+        width: 100%;
+    }
+    .bannertext h1{
+        font-size: 36px;
+        width: 60%;
+        line-height: 120%;
+    }
+    .bannertext span{
+        font-size: 50px;
+    }
+    .bannertext>p{
+        width: 85%;
+    }
+    .bannertext div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .join{
+        padding: 15px 18px;
+    }
+    .bannerimg img{
+        width: 100%;
+    }
+    .video{
+        left: 0%;
+        bottom: 40%;
+        padding: 16px 18px;
+    }
+    .video h3{
+        font-size: 18px;
+    }
+    .bannerimg p{
+        font-size: 12px;
+        margin-top: 5px;
+    }
+    .tutorial{
+        top: 10%;
+        right: 0%;
+        padding: 16px 18px;
+        
+    }
+    .tutorial h1{
+        font-size: 30px;
+        line-height: 30px;
+    }
 }
