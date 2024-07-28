@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'Miama';
+    src: url('../font/Miama.ttf');
+}
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    text-decoration: none;
+}
+
+
+
+/*   shared styles   */
+
+:host, :root {
+    --rem: 18;
+}
+
+p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: .9rem;
+    font-weight: 400;
+    line-height: 1.3rem;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+
+
+body{
+    font-family: "Inter", sans-serif;
+}
+
+
+
+/*    header section   */
+
+header{
+    padding: 0px 20px;
+    background: linear-gradient(180deg, rgba(17,17,17,1) 20%, rgba(42,42,42,1) 50%, rgba(17,17,17,1) 80%);
+}
+
+
+
+
+/*    nav section   */
+
+nav{
+    max-width: 1060px;
+    padding-top: 60px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: rgb(230, 83, 60);
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+    list-style-type: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2.3rem;
+    padding: 4px 20px 4px 4px;
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.home{
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+    padding: 8px 20px;
+}
+
+.home a{
+    font-weight: 600;
+}
+
+
+
+
+
+/*   banner section    */
+
+.banner{
+    max-width: 1060px;
+    margin: auto;
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bannertext{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+
+.bannertext h1{
+    color: rgb(255, 255, 255);
+    font-size: 4.3rem;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.bannertext span{
+    font-family: 'Miama', sans-serif;
+    font-size: 7.5rem;
+    font-weight: 400;
+    line-height: 1px;
+}
+
+.join{
+    padding: .9rem 2.2rem;
+    margin-right: .7rem;
+    border-radius: 2.3rem;
+    background: rgb(230, 83, 60);
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+}
+
+.download{
+    border: 1px solid rgb(255, 255, 255);
+    background-color:transparent;
+}
+
+.bannerimg{
+    width: 42%;
+    position: relative;
+}
+
+.bannerimg img{
+    width: 90%;
+}
+
+.video{
+    position: absolute;
+    bottom: 15%;
+    left: -20%;
+    padding: 1rem 1.1rem;
+    display: flex;
+    column-gap: .7rem;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    backdrop-filter: blur(20px);
+    background: rgba(48, 48, 48, 0.54);
+}
+
+.redcircle{
+    height: 2.3rem;
+    width: 2.3rem;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+
+.video h3{
+    color: rgb(250, 250, 249);
+    font-size: 1.3rem;
+    font-weight: 900;
+    line-height: 1.3rem;
+    letter-spacing: 0.3px;
+}
+
+.bannerimg p{
+    color: rgba(239, 237, 232, 0.65);
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    margin-top: .5rem;
+}
+
+.tutorial{
+    position: absolute;
+    top: 25%;
+    right: 0%;
+    padding: 1rem 1.1rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 1rem;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tutorial h1{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
