@@ -19,10 +19,21 @@
 
 p{
     color: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.5px;
+}
+
+button{ 
+    cursor: pointer;
+}
+
+.sectionheader{
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 120%;
 }
 
 
@@ -132,6 +143,10 @@ nav a{
     line-height: 1px;
 }
 
+.bannertext p{
+    font-size: 16px;
+}
+
 .join{
     padding: 16px 40px;
     margin-right: 14px;
@@ -218,6 +233,57 @@ nav a{
 
 
 
+/*   main  section   */
+
+main{
+    background: rgb(0, 0, 0);
+}
+
+
+
+
+
+/*   change section   */
+
+
+.change{
+    padding-top: 100px;
+    max-width: 1060px;
+    margin: 0px auto;
+
+}
+
+.change1{
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 14px;
+    margin: 0px auto 60px;
+}
+
+.change2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.change2 img{
+    border: none;
+    border-radius: 50%;
+}
+
+.change2 h2{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 600;
+    margin: 30px 0px 12px;
+}
+
+.change21 p{
+    line-height: 22px;
+}
 
 
 
