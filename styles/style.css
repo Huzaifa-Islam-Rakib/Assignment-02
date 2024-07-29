@@ -271,7 +271,7 @@ main{
 }
 
 .change2 img{
-    border: none;
+    border: 4px solid rgba(255, 255, 255, 0.1);
     border-radius: 50%;
 }
 
@@ -289,6 +289,41 @@ main{
 
 
 
+/*    run section   */
+
+.run{
+    max-width: 1060px;
+    margin: 100px auto 0px;
+    padding: 30px 30px 30px 50px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    
+}
+
+.run p{
+    margin: 14px 0px 30px;
+}
+
+.runtext{
+    width: 40%;
+}
+
+.runimg{
+    width: 45%;
+}
+
+.runimg img{
+    width: 100%;
+    border-radius: 18px;
+}
+
+.runimg2 img{
+    width: 100%;
+    border-radius: 18px;
+}
 
 
 
@@ -298,6 +333,12 @@ main{
 
 
 @media screen and (max-width:576px) {
+    .sectionheader{
+        color: rgb(255, 255, 255);
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 120%;
+    }
     nav{
         padding-top: 50px;
     }
@@ -372,5 +413,27 @@ main{
         row-gap: 36px;
         width: 230px;
         margin: 0px auto;
+    }
+    
+    .run{
+        flex-direction: column;
+        row-gap: 40px;
+        padding: 30px;
+    }
+    .runtext{
+        width: 100%;
+    }
+    .run p {
+        margin-bottom: 20px;
+    }
+    .runimg {
+        display: none;
+    }
+    .runimg2 img{
+        display: inline-block;
+    }
+    .join {
+        padding: 20px 18px;
+        width: 100%;
     }
 }
