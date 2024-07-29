@@ -237,6 +237,7 @@ nav a{
 
 main{
     background: rgb(0, 0, 0);
+    padding: 0px 20px;
 }
 
 
@@ -362,5 +363,14 @@ main{
     .tutorial h1{
         font-size: 30px;
         line-height: 30px;
+    }
+    .change{
+        padding-top: 20px;
+    }
+    .change2{
+        flex-direction: column;
+        row-gap: 36px;
+        width: 230px;
+        margin: 0px auto;
     }
 }
