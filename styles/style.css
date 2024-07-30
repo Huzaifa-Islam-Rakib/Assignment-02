@@ -43,6 +43,7 @@ button{
 
 
 
+
 body{
     font-family: "Inter", sans-serif;
 }
@@ -75,6 +76,7 @@ nav{
     font-size: 36px;
     font-weight: 800;
     font-style: italic;
+    line-height: normal;
 }
 
 nav ul{
@@ -237,7 +239,7 @@ nav a{
 
 main{
     background: rgb(0, 0, 0);
-    padding: 0px 20px;
+    padding: 0px 20px 90px;
 }
 
 
@@ -319,15 +321,87 @@ main{
     width: 100%;
     border-radius: 18px;
 }
-
+.runimg2{
+    display: none;
+}
 .runimg2 img{
     width: 100%;
     border-radius: 18px;
+    display: none;
 }
 
 
 
 
+
+
+
+
+
+
+
+
+/*    footer section   */
+
+footer{
+    background: rgb(34, 34, 34);
+    padding: 65px 20px 35px;
+    
+}
+
+footer> div{
+    max-width: 1160px;
+    margin: 0px auto;
+}
+
+.footermain{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.flogo{
+    width: 42%;
+}
+
+.flogos{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+footer h2{
+    line-height: normal;
+    margin-bottom: 40px;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+footer a{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+    font-weight: 400;
+}
+
+
+footer hr{
+    margin: 80px 0px 35px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.copy>p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 20px;
+    letter-spacing: 0.3px;
+    text-align: center;
+}
 
 
 
@@ -374,11 +448,12 @@ main{
     .bannertext div{
         display: flex;
         justify-content: space-between;
+        gap: 14px;
         align-items: center;
         width: 100%;
     }
     .join{
-        padding: 15px 18px;
+        margin-right: 0px;
     }
     .bannerimg img{
         width: 100%;
@@ -429,11 +504,30 @@ main{
     .runimg {
         display: none;
     }
+    .runimg2{
+        display: inline-block;
+    }
     .runimg2 img{
         display: inline-block;
     }
-    .join {
+    .run button{        
         padding: 20px 18px;
         width: 100%;
+    }
+    main{
+        padding-bottom: 65px;
+    }
+    footer{
+        padding: 45px 20px 60px;
+    }
+    footer hr{
+        margin: 70px 0px 40px;
+    }
+    .footermain{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .flogo{
+        width: 90%;
     }
 }
