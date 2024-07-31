@@ -645,4 +645,8 @@ footer hr{
         margin-bottom: 40px;
         width: 90%;
     }
+    .meetcontainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, calc((315 / 270)*(100vw - 80px)));
+    }
 }
